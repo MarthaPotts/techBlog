@@ -1,0 +1,18 @@
+
+[
+    {
+        "content": "Did you know JavaScript was written for Netscape?",
+        "post_id": 1, 
+        "user_id": 2
+    }, 
+    {
+        "content": "I can't think of any good responses. It's like my brain is completely fried",
+        "post_id": 2, 
+        "user_id": 3
+    }, 
+    {
+        "content": "Yup.",
+        "post_id": 3, 
+        "user_id": 4
+    }
+]

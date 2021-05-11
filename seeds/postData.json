@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Vanilla JavaScript",
+        "contents":"Is this an official name or lingo?",
+        "user_id": 1
+    },
+    {
+        "title": "Woman's Brain rejects new technology",
+        "contents":"Doesn't retain information well",
+        "user_id": 2
+    }, 
+    {
+        "title": "Woman has nighmares of being trapped inside of coding projects",
+        "contents":"Labyrinthine code nightmares",
+        "user_id": 3
+    }
+]

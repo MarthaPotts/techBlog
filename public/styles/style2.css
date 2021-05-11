@@ -1,0 +1,170 @@
+html {
+    height: 100%; 
+    background-color: black; 
+    /* background-image: url('/images/annie-spratt-lIWF2uHxs0Q-unsplash.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: auto;
+    color: antiquewhite;
+}
+
+/*multi-section header*/
+.hero {
+    background-image: url('/images/jez-timms-8muUTAmcWU4-unsplash.jpg'); 
+    height: 25vh;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.nav-menu {
+    display: flex;  
+}
+.controls {
+    list-style-type: none;
+}
+button {
+    margin: 5px;
+    background-color: antiquewhite;
+    padding: 3px;
+    padding-left: 4px; 
+    padding-right: 4px;
+    border-radius: 5px; 
+    border-color: maroon;
+      
+}
+.intro { 
+    background-color: maroon;
+    border-radius: 5px;
+    padding: 10px; 
+    margin: 5px;
+    display: flex; 
+    justify-content: center;    
+}
+.name {
+    padding-left: 30px; 
+    color: black; 
+    font-size: 32px; 
+}
+
+/*content rendering*/
+.thread-container {
+    background-color: tan; 
+    border-radius: 5px; 
+    margin: 5px; 
+}
+.thread-header {
+    display: flex; 
+    justify-content: space-between;  
+}
+.title {
+    color: black; 
+    padding: 5px;   
+}
+.by-and-on {
+    color: black;
+    padding: 5px; 
+ 
+}
+.thread-body {
+    color: black;
+    padding: 10px;  
+}
+/*comments*/
+.comments-container {
+    display: flex;
+    justify-content: space-between;  
+}
+.comment-form {
+    display: flex; 
+    flex-direction: column;
+}
+.comment-text {
+    margin: 20px;
+    width: 80%;  
+}
+.comment-render {
+    margin: 5px; 
+}
+.commenter {
+    margin-bottom: 10px;
+    padding: 5px; 
+}
+/*login*/
+.login-form {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px; 
+    justify-content: center; 
+    align-items: center; 
+}
+/*signup*/
+.signup-form {
+    display: flex; 
+    flex-direction: column; 
+    padding: 10px; 
+    /* justify-content: center;
+    align-items: center;  */
+}
+.form-group {
+    margin: 10px; 
+}
+/*editpost*/
+.edit-post-container {
+    display: flex; 
+    flex-direction: column; 
+    padding: 10px; 
+    border: solid 1px antiquewhite;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+.edit-post-form {
+    display: flex; 
+    flex-direction: column; 
+}
+.update {
+    margin-top: 20px;
+    padding: 5px;
+    color: green;   
+}
+.delete {
+    padding: 5px; 
+    color: maroon; 
+}
+.title-edit, .content-edit {
+    background-color: maroon; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+/*addpost.hbs*/
+.new-post {
+    margin-left: 35px; 
+}
+/*create*/
+.create-new-post-container {
+    display: flex; 
+    flex-direction: column;
+    border: solid 1px antiquewhite; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+.create-new-form {
+    display: flex; 
+    flex-direction: column;
+    margin: 5px;   
+}
+.addnew {
+    margin-top: 20px; 
+}
+.new-title, .new-content {
+    background-color: maroon;
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+
+
