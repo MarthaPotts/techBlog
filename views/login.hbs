@@ -2,21 +2,29 @@
 <div class='login-form'>
 <h2 class='login'>Log in</h2>
 <form class="form login-form">
+
       <div class="form-group">
+        <label for="username-login">Username:</label>
+        <input class="form-input" type="text" id="username-login" />
+        </div>
+
+        <div class="form-group">
         <label for="email-login">Email:</label>
         <input class="form-input" type="text" id="email-login" />
-      </div>
+        </div>
+
       <div class="form-group">
         <label for="password-login">Password:</label>
         <input class="form-input" type="password" id="password-login" />
       </div>
+
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
+        <button class="btn btn-primary" type="submit">Log In</button>
       </div>
     </form>
 
-<a href=#>
-    <p class='instead'>Sign Up</p>
-</a>
+
+    <p><a href="/signup" class="instead">Sign Up</a></p>
+
 </div>
 <script src='/scripts/login.js'></script>

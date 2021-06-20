@@ -6,39 +6,17 @@ class Comment extends Model {}
 
 Comment.init(
     {
-        id: {
-            type: DataTypes.INTEGER, 
-            allowNull: false, 
-            primaryKey: true, 
-            autoIncrement: true, 
-        }, 
-        content: {
+        body: {
             type: DataTypes.STRING, 
-            allowNull: false, 
+            allowNull: false,
         }, 
-        post_id: {
-            type: DataTypes.INTEGER, 
-            allowNull: false, 
-            references: {
-                model: 'post', 
-                key: 'id',
-            }, 
-        },
-        user_id: {
-            type: DataTypes.INTEGER, 
-            allowNull: false, 
-            references: {
-                model: 'user', 
-                key: 'id',
-            }
-        } 
     }, 
     {
         sequelize, 
         timestamps: false, 
         freezeTableName: true, 
         underscored: true, 
-        modelName: 'comment', 
+        modelName: 'Comment', 
     }, 
 ); 
 

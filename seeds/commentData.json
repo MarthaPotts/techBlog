@@ -1,18 +1,12 @@
 
 [
     {
-        "content": "Did you know JavaScript was written for Netscape?",
-        "post_id": 1, 
-        "user_id": 2
+        "body": "this is the most ridiculous thing I've ever read"
     }, 
     {
-        "content": "I can't think of any good responses. It's like my brain is completely fried",
-        "post_id": 2, 
-        "user_id": 3
+        "body": "I feel terrible. My aunt is dying at Doctor's West in the ICU. Nothing I can really do. Dont feel guilty for doing homework. She would tell you to do your work."
     }, 
     {
-        "content": "Yup.",
-        "post_id": 3, 
-        "user_id": 4
+        "body": "why am I doing this again? Sex, drugs, and rock-n-roll?"
     }
 ]

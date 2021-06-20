@@ -1,0 +1,17 @@
+<div class="edit-container">
+    <div class="edit-header">
+        <h2>Edit Post</h2>
+    </div>
+    <form id="edit-post-form" class="edit-form">
+        <input type="hidden" name="post-id" value="{{post-id}}"/>
+
+        <label for="edit-title">New Title</label>
+        <input type="text" id="edit-title" value="{{post.title}}" class="form-input"/>
+
+        <label for="edit-body">New Content</label>
+        <textarea id="edit-body" class="form-input">{{post.body}}</textarea>
+
+        <button type="submit" class="edit-btn">Update</button>
+        <button type="button" id="delete-btn" class="delete-btn">Delete</button>
+    </form>
+</div>

@@ -33,8 +33,11 @@ button {
     padding-left: 4px; 
     padding-right: 4px;
     border-radius: 5px; 
-    border-color: maroon;
+    border-color: maroon; 
       
+}
+a {
+    text-decoration: none; 
 }
 .intro { 
     background-color: maroon;
@@ -74,6 +77,9 @@ button {
     padding: 10px;  
 }
 /*comments*/
+#comment-wrapper {
+    display: none; 
+}
 .comments-container {
     display: flex;
     justify-content: space-between;  
@@ -100,6 +106,9 @@ button {
     padding: 10px; 
     justify-content: center; 
     align-items: center; 
+}
+.instead {
+    color: antiquewhite; 
 }
 /*signup*/
 .signup-form {

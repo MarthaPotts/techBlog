@@ -1,19 +1,4 @@
-
-    
-
-     <main class='thread-container'>
-         <header class='thread-header'>
-             <a href=#><h3 class='title'>{{post.title}}post.title</h3></a>
-             <h3 class='by-and-on'>Posted by: {{post.User.username}} post.username on 
-                 {{!-- {{format_date post.createdOn}} --}}getDateHelper createdAt
-                 </h3>
-         </header>
-         <section class='thread-body'>{{post.body}}post.body</section>
-       
-     </main>
-     
-     <div id="comment-wrapper">
-         {{!-- {{#if post.Comments}} --}}
+{{!-- {{#if post.Comments}} --}}
 <section class='comment-container'>
     <div class='comment-render'>
         {{!-- {{#each post.Comments}} --}}
@@ -39,8 +24,4 @@
     </form>
              
 </section>
-</div>
-<script src="/scripts/comment.js">
-</script>
-    
-      
+<script src="/scripts/comment.js"></script>
