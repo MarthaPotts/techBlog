@@ -1,8 +1,13 @@
 <header class='intro'>
     <h1 class='name'>Your Dashboard</h1>
 </header>
+<div class="dbBtn-container">
+    <button class="newBtn-db" type="submit" ><a href="/createpost">New Post</a></button>
+    <button class="editBtn-db" type="submit"><a href="/updatepost">Edit Post</a></button> 
+</div>
 <script>
-    let testEl = document.createElement('div'); 
-    testEl.textContent = "can I add a script to a partial it works?"; 
-    document.body.appendChild(testEl); 
+    {{!-- let testEl = document.createElement('div'); 
+    testEl.textContent = "can I add a script to a partial and it works?"; 
+    document.body.appendChild(testEl);  --}}
+    dbBtn-container.style.display="flex"; 
 </script>

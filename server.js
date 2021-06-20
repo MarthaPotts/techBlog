@@ -6,7 +6,7 @@ const handlebars = require('express-handlebars');
 
 // const routes = require('./controllers'); 
 //app.use(require('./controllers/)); <- try this for api instead of the const
-//const helpers = require('./utils/helpers'); 
+const helpers = require('./utils/helpers'); 
 
 // const sequelize = require('./config/connections'); 
 // const SequelizeStore = require('connect-session-sequelize')(session.Store); 
@@ -14,7 +14,7 @@ const handlebars = require('express-handlebars');
 const app = express(); 
 const PORT = process.env.PORT || 3001; 
 // const PORT = process.env.PORT || 3000; 
-// const hbs = exphbs.create( { helpers } ); 
+const hbs = handlebars.create( { helpers } ); 
 
 const sess = {
     secret: 'Super secret secret', 
@@ -48,15 +48,15 @@ app.get('/', (req, res) => {
 }); 
 app.get('/login', (req, res) => res.render('login'));  
 
-app.get('/signup', (req, res) => res.render('signup')); 
+app.get('/signup', (req, res) => res.render('signup'));  
 
-// app.get('/addpost', (req, res) => res.render('addpost')); 
+app.get('/createpost', (req, res) => res.render('createpost')); 
 
-// app.get('/createpost', (req, res) => res.render('createpost')); 
-
-// app.get('/updatepost', (req, res) => res.render('updatepost')); 
+app.get('/updatepost', (req, res) => res.render('updatepost')); 
 
 app.get('/dashboard', (req, res) => res.render('dashboard')); 
+
+app.get('/loggedinhome', (req, res) => res.render('loggedinhome')); 
  
 
 // app.get('/', (req, res) => res.send('Let us do this thing!!!')); 

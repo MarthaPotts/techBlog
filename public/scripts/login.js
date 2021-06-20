@@ -12,10 +12,7 @@ const loginFormHandler = async (event) => {
         }); 
 
         if (response.ok) {
-            document.location.replace('/');
-            dbBtn.style.display="inline"; 
-            logoutBtn.style.display="inline";
-            showComments();   
+            document.location.replace('/loggedinhome');
         } else {
             alert('Failed to log in'); 
         }

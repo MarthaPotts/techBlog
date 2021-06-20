@@ -11,10 +11,7 @@ const response = await fetch('/api/user', {
     }); 
 
     if (response.ok) {
-        document.location.replace('/');
-        dbBtn.style.display="inline";
-        logoutBtn.style.display="inline";  
-
+        document.location.replace('/loggedinhome');
     } else {
         alert('Failed to sign up'); 
     }

@@ -42,8 +42,8 @@ a {
 .intro { 
     background-color: maroon;
     border-radius: 5px;
-    padding: 10px; 
-    margin: 5px;
+    padding: 1px; 
+    margin: 2px;
     display: flex; 
     justify-content: center;    
 }
@@ -145,7 +145,7 @@ a {
 }
 .title-edit, .content-edit {
     background-color: maroon; 
-    padding: 5px; 
+    padding: 2px; 
     border-radius: 5px; 
 }
 /*addpost.hbs*/
@@ -157,7 +157,7 @@ a {
     display: flex; 
     flex-direction: column;
     border: solid 1px antiquewhite; 
-    padding: 10px; 
+    padding: 5px; 
     border-radius: 5px; 
     margin-top: 10px; 
 }

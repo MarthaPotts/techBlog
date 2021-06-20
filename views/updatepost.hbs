@@ -1,22 +1,20 @@
-{{!-- uses the 'your dashboard header' --}}
-<header class='intro'>
-    <h1 class='name'>Your Dashboard</h1>
-</header>
+
+{{>dbheader}}
 <div class='edit-post-container'>
     <p class='header'>Edit Post </p>
     <form class='edit-post-form'>
       <input type="hidden" name="post-id" value="{{post-id}}"/>
 
         <h3 class='title-edit'>Title</h3>
-          <textarea class='edit-title'
-          placeholder='new title'>{{post.title}}
-          </textarea>
+          <textarea class='edit-title' name="edit-title"
+          placeholder='new title'>{{post.title}}</textarea>
 
         <h3 class='content-edit'>Content</h3>
-          <textarea class='post-content'
-          placeholder='new content'
-          >{{post.body}}</textarea>
+          <textarea class='post-content' name="edit-post-content"
+          placeholder='new content'>{{post.body}}</textarea>
+
     <button class='update' type='submit'>Update</button>
     <button class='delete' type='submit'>Delete</button>
     </form>
 </div>
+<script src="/scripts/updatepost.js"></script>

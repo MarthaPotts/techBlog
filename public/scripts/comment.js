@@ -1,9 +1,4 @@
-let commentsEl = document.querySelector('#comment-wrapper'); 
-function showComments() {
-    commentsEl.style.display="inline"; 
-    return; 
-}
-// showComments(); 
+
 const commentFormHandler = async (event) => {
     event.preventDefault(); 
 }
@@ -16,7 +11,7 @@ if (body) {
         body: JSON.stringify({postId, body}), 
         headers: {'Content-Type': 'application/json'},
     }); 
-    docuement.location.reload(); 
+    document.location.reload(); 
 }
 docuement.querySelector('.comment-form')
 .addEventListener('submit', commentFormHandler); 

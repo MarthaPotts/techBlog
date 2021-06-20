@@ -4,43 +4,18 @@
      <main class='thread-container'>
          <header class='thread-header'>
              <a href=#><h3 class='title'>{{post.title}}post.title</h3></a>
-             <h3 class='by-and-on'>Posted by: {{post.User.username}} post.username on 
-                 {{!-- {{format_date post.createdOn}} --}}getDateHelper createdAt
-                 </h3>
+             <span class='by-and-on'>Posted by: {{post.User.username}} post.username</span><span class="by-and-on"> 
+                 {{!-- {{format_date post.createdAt}} --}}getDateHelper
+                 </span>
          </header>
          <section class='thread-body'>{{post.body}}post.body</section>
-       
-     </main>
+       </main>
      
-     <div id="comment-wrapper">
-         {{!-- {{#if post.Comments}} --}}
-<section class='comment-container'>
-    <div class='comment-render'>
-        {{!-- {{#each post.Comments}} --}}
-        {{!-- {{body}} --}}
-        comment.body
-        <div class='commenter'>
-        {{!-- {{user.name}} --}}
-        Username, 
-        {{!-- {{format_date createdAt}} --}}
-        date
-        </div>
-        
-        {{!-- {{/each}} --}}
-    </div>
-{{!-- {{/if}} --}}
-        
-    <form class='comment-form'>
-        <input type="hidden" name="post-id" value="{{post.id}}" />
-        <label for="new-comment-body" class="new-comment-form">New Comment:</label>
-        <textarea class='comment-text' name="new-comment-body"
-                 placeholder="Add comment here..."></textarea>
-            <button class='comment-btn' type='submit'>Add Comment</button>
-    </form>
-             
-</section>
-</div>
-<script src="/scripts/comment.js">
+<script>
+    let dbBtn = document.querySelector('.dashboard'); 
+         dbBtn.style.display="none";
+         let logoutBtn = document.querySelector('.logout'); 
+         logoutBtn.style.display="none"; 
 </script>
     
       
