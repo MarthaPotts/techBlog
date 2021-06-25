@@ -24,7 +24,7 @@ User.init(
             type: DataTypes.STRING, 
             allowNull: false, 
             validate: {
-                length: [6], 
+                len: [6], 
                 },  
         },
         email: {

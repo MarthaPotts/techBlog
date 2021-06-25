@@ -1,4 +1,5 @@
 const router = require('express').Router(); 
+// const { Model } = require('sequelize/types');
 const { Post } = require('../models/'); 
 const withAuth = require('../utils/auth'); 
 
@@ -33,3 +34,5 @@ router.get('/updatepost', withAuth, async (req, res) => {
         res.redirect('login'); 
     }
 });
+
+module.exports = router; 
