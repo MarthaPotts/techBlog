@@ -17,5 +17,13 @@ if(process.env.JAWSDB_URL) {
         }
     ); 
 }
-
+async function testConnection() {
+    try {
+       const auth = await sequelize.authenticate(); 
+       console.log('Connection to db established successfully'); 
+    } catch (err) {
+        console.error('Unable to connect to db', err); 
+    }; 
+}
+testConnection(); 
 module.exports = sequelize; 

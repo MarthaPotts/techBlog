@@ -108,5 +108,14 @@ router.get('/signup', (req, res) => {
     res.render('signup'); 
 }); 
 
-
+router.get('/', (req, res) => {
+    if (req.session.loggedIn){
+        res.render('/'); 
+    } else {
+        res.status(404); 
+    }
+})
+router.get('/loggedinhome', (req, res) => {
+    res.render('loggedinhome'); 
+})
 module.exports = router; 

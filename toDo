@@ -1,0 +1,101 @@
+Models -> db structure
+Separation of Concerns ->tables/keys 
+
+home-routes needs to connect 
+
+user seeds, more seeds with more structure and progress 
+    on the models 
+
+Handlebars: learn it. 
+
+npm i 
+seed the db 
+
+make posts 
+complete json seed files 
+
+1. Server works 
+2. seed database 
+3. routes/models 
+
+
+
+Second verse, same as the first...
+
+CMS-style blog site 
+
+homepage -> sign in or sign up 
+
+nav for home and dashboard 
+    -> existing posts on homepage 
+    -> all links prompt signup/sign in unless logged in 
+
+    -> signUp: username and password, auto sign out with idle 
+
+blog posts must include 
+    -> post title, date created in header 
+    -> click on header -> title, contents, post creator's username, date created 
+
+dashboard in nav -> any blog posts already created (myPosts) and option to addNew 
+    ->button ->onclick, prompt: enter Title and Contents submit -> save and return to updated dashboard
+    ->existing posts update/delete then return to dashboard 
+
+Logout in nav 
+
+Tech: must include:
+
+MVC folder structure and pardigm 
+
+Express-handlebars 
+
+mySQL2 
+
+Sequelize 
+
+mySQL db 
+
+Express.js API for controllers 
+
+dotenv package, bcrypt package, express-session, connect-session-sequelize 
+
+Must be deployed to Heroku /url 
+
+Github URL 
+
+"application resembles the mock-up functionality provided" 
+
+Model/View/Controller: 
+
+models -> db (mySQL, sequelize, mySQL2)
+
+view-> user interface and frontend logic  (express-handlebars)
+
+controller -> routes and backend logic (express.js)
+
+User side: 
+Nav bar needs completed: 
+Home/Dashboard/Login/Logout ? add Signup? or *render if no account found? 
+
+Hey Dummy! you didn't add a Username to the form! How are they supposed to post with their username if you don't give them the chance? 
+And what does your dashboard look like? 
+Why isn't it clearly found as 'dashboard'? 
+
+so...
+what you have here is...
+
+HOME = Inactive without LoginAuth.? Can only 'view title'. 
+
+'Login' = page(s) active = 
+    : links work, view all of post.body, add comments
+    : dashboard access 
+        : dashboard = add post/edit post 
+if login not auth redirect* to signup. 
+signup = create newUser -> login simultaneously? at signup? 
+
+make functions for the buttons, Dummy. 
+add a UserName field, Dummy: it's used as a post Identifier.:  
+post-creator's username....
+
+
+
+
