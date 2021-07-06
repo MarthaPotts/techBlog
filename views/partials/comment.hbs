@@ -1,18 +1,18 @@
-{{!-- {{#if post.Comments}} --}}
+{{#if post.Comments}}
 <section class='comment-container'>
     <div class='comment-render'>
-        {{!-- {{#each post.Comments}} --}}
-        {{!-- {{body}} --}}
+        {{#each post.Comments}}
+        {{body}}
         comment.body
         <div class='commenter'>
-        {{!-- {{user.name}} --}}
+        {{user.name}}
         Username, 
-        {{!-- {{format_date createdAt}} --}}
+        {{format_date createdAt}}
         </div>
         
-        {{!-- {{/each}} --}}
+        {{/each}}
     </div>
-{{!-- {{/if}} --}}
+{{/if}}
         
     <form class='comment-form'>
         <input type="hidden" name="post-id" value="{{post.id}}" />

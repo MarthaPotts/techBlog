@@ -1,13 +1,13 @@
 
 <main class='thread-container'>
-    {{!-- {{#each posts}} --}}
+    {{#each posts}}
          <header class='thread-header'>
              <a href='/post/{{id}}'><h3 class='title'>{{title}}post.title</h3></a>
              <span class='by-and-on'>Posted by: {{User.username}} username</span> 
-                <span class='by-and-on'>{{!-- {{format_date post.createdAt}} --}}getDateHelper
+                <span class='by-and-on'>{{format_date post.createdAt}}getDateHelper
                 </span>
          </header>
          <section class='thread-body'>{{body}}body</section>
-    {{!-- {{/each}} --}}
+    {{/each}}
        </main>
        <script src="/scripts/comment.js"></script>
