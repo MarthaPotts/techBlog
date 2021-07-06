@@ -7,7 +7,8 @@ const handlebars = require('express-handlebars');
 
 // const routes = require('./controllers'); 
 // app.use(require('./controllers/')); 
-const helpers = require('./utils/helpers'); 
+const helpers = require('./utils/helpers');
+const withAuth = require("./utils/auth"); 
 
 const sequelize = require('./config/connections'); 
 const SequelizeStore = require('connect-session-sequelize')(session.Store); 
